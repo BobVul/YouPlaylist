@@ -1,9 +1,10 @@
 import React from 'react';
 import './App.css';
+import { Grommet } from 'grommet';
 
 const App: React.FC = () => {
   return (
-    <div className="App">
+    <Grommet plain>
       <header className="App-header">
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
@@ -17,7 +18,7 @@ const App: React.FC = () => {
           Learn React
         </a>
       </header>
-    </div>
+    </Grommet>
   );
 }
 
