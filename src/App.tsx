@@ -2,9 +2,19 @@ import React from 'react';
 import './App.css';
 import { Grommet } from 'grommet';
 
+const theme = {
+  global: {
+    font: {
+      family: 'Roboto',
+      size: '14px',
+      height: '20px',
+    },
+  },
+};
+
 const App: React.FC = () => {
   return (
-    <Grommet plain>
+    <Grommet theme={theme}>
       <header className="App-header">
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
