@@ -1,6 +1,9 @@
 import React from 'react';
 import './App.css';
 import { Grommet } from 'grommet';
+import { Router } from '@reach/router';
+import Home from './pages/Home';
+import Route from './util/Route';
 
 const theme = {
   global: {
@@ -15,6 +18,10 @@ const theme = {
 const App: React.FC = () => {
   return (
     <Grommet theme={theme}>
+      <Router>
+        <Route component={Home} path="/" />
+      </Router>
+
       <header className="App-header">
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
