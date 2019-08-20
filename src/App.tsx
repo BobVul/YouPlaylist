@@ -4,6 +4,7 @@ import { Grommet } from 'grommet';
 import { Router } from '@reach/router';
 import Home from './pages/Home';
 import Route from './util/Route';
+import AppBar from './parts/AppBar';
 
 const theme = {
   global: {
@@ -18,6 +19,7 @@ const theme = {
 const App: React.FC = () => {
   return (
     <Grommet theme={theme}>
+      <AppBar />
       <Router>
         <Route component={Home} path="/" />
       </Router>
